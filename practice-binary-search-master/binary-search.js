@@ -26,19 +26,13 @@ function binarySearch(arr, target) {
     if (target > arr[mid]) {
       low = mid + 1;
     } else {
+      // If the target is less than the midpoint...
+      // Move the high pointer to midpoint - 1
       high = mid - 1;
     }
   }
-  return -1
-
-
-
-
-    // If the target is less than the midpoint...
-      // Move the high pointer to midpoint - 1
-
   // Return -1 if the loop exits with overlapping pointers
-
+  return -1
 }
 
 
